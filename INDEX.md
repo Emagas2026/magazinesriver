@@ -6,7 +6,7 @@ This file is generated automatically from GitHub Releases. Issues are sorted by 
 
 | Issue date | PDF | EPUB | Release |
 | --- | --- | --- | --- |
-| — | — | — | — |
+| 2026-07-11 | [Download](https://github.com/Emagas2026/magazinesriver/releases/download/te-20260711/20260711-The-Economist.pdf) | [Download](https://github.com/Emagas2026/magazinesriver/releases/download/te-20260711/20260711-The-Economist.epub) | [View](https://github.com/Emagas2026/magazinesriver/releases/tag/te-20260711) |
 
 ## The New Yorker Magazine
 
@@ -20,4 +20,4 @@ This file is generated automatically from GitHub Releases. Issues are sorted by 
 | --- | --- | --- | --- |
 | — | — | — | — |
 
-_Total issues: 0._
+_Total issues: 1._
