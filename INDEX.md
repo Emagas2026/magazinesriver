@@ -12,7 +12,7 @@ This file is generated automatically from GitHub Releases. Issues are sorted by 
 
 | Issue date | PDF | EPUB | Release |
 | --- | --- | --- | --- |
-| — | — | — | — |
+| 2026-07-20 | [Download](https://github.com/Emagas2026/magazinesriver/releases/download/ny-20260720/20260720-The-New-Yorker-Magazine.pdf) | [Download](https://github.com/Emagas2026/magazinesriver/releases/download/ny-20260720/20260720-The-New-Yorker-Magazine.epub) | [View](https://github.com/Emagas2026/magazinesriver/releases/tag/ny-20260720) |
 
 ## TIME Magazine
 
@@ -20,4 +20,4 @@ This file is generated automatically from GitHub Releases. Issues are sorted by 
 | --- | --- | --- | --- |
 | 2026-07-06 | [Download](https://github.com/Emagas2026/magazinesriver/releases/download/tm-20260706/20260706-TIME-Magazine.pdf) | [Download](https://github.com/Emagas2026/magazinesriver/releases/download/tm-20260706/20260706-TIME-Magazine.epub) | [View](https://github.com/Emagas2026/magazinesriver/releases/tag/tm-20260706) |
 
-_Total issues: 2._
+_Total issues: 3._
