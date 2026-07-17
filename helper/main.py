@@ -26,7 +26,15 @@ MAGZINES = {
         "recipe": "TIME Magazine",
         "folder": "time_magzine",
         "date_regex": r"TIM\K(\d{6})", # 从日志提取
-    }
+    },
+    # ===== 新增 Nature 配置 =====
+    "na": {
+        "id": "na",
+        "name": "Nature",
+        "recipe": "nature",              # 对应根目录的 nature.recipe 文件
+        "folder": "nature",
+        "date_regex": None,              # Nature 的日期从日志中提取方式不同，使用备用方法
+    },
 }
 
 # 针对不同杂志的特殊参数映射
@@ -34,6 +42,7 @@ RECIPE_OPTIONS = {
     "te": "date",
     "ny": "date",
     "tm": "edition",
+    # Nature 不添加 date 参数，让它自动抓取最新一期
 }
 
 BOOKS_DIR = "converted_ebooks"
