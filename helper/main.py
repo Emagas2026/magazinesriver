@@ -2,7 +2,7 @@ import os
 import re
 import sys
 import subprocess
-from datetime import datetime
+from datetime import datetime, timedelta
 
 # 杂志配置信息
 MAGZINES = {
@@ -119,7 +119,6 @@ def main():
     # 特殊逻辑：自动将日期对齐到杂志的出版日
     if (mag_id == "te" or mag_id == "ny") and issue_date:
         try:
-            from datetime import datetime, timedelta
             # 兼容 YYYY-MM-DD, YYYYMMDD, YYYY/MM/DD
             clean_date = issue_date.replace("-", "").replace("/", "")
             dt_obj = datetime.strptime(clean_date, "%Y%m%d")
