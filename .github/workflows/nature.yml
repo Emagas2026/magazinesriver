@@ -1,0 +1,27 @@
+name: Nature
+run-name: "Nature: ${{ github.ref_name }}"
+
+on:
+  workflow_dispatch:
+    inputs:
+      issue_date:
+        description: 'Issue Date (YYYY-MM-DD) - 留空则抓取最新一期'
+        required: false
+        default: ''
+  schedule:
+    - cron: '0 6 * * 3'   # 每周三 UTC 6:00 (北京时间下午2点)
+
+jobs:
+  worker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Fetch and Process
+        uses: ./.github/actions/fetch-mag
+        with:
+          mag_id: na
+          mag_name: "Nature"
+          issue_date: ${{ github.event.inputs.issue_date }}
+          github_token: ${{ secrets.GITHUB_TOKEN || github.token }}
