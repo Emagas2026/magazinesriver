@@ -167,12 +167,14 @@ def main():
     
     convert_args = ["ebook-convert", f"{recipe}.recipe", raw_epub]
     
-    # 如果指定了日期，则尝试通过 --recipe-specific-option 传入
-    if issue_date:
-        opt_name = RECIPE_OPTIONS.get(mag_id, "date")
-        # 格式为 --recipe-specific-option=name:value
+    # ===== 关键修改：只对支持 date 参数的杂志传递 date =====
+    if issue_date and mag_id in RECIPE_OPTIONS:
+        opt_name = RECIPE_OPTIONS.get(mag_id)
         convert_args.append(f"--recipe-specific-option={opt_name}:{issue_date}")
         print(f"Using recipe option: {opt_name}:{issue_date}")
+    elif issue_date and mag_id not in RECIPE_OPTIONS:
+        print(f"Warning: {mag_id} does not support custom date parameter, ignoring it.")
+    # ========================================================
 
     convert_output, code = run_command(convert_args)
     
